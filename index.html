@@ -1,0 +1,361 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Kaviareň Korzo · umelecká kaviareň, Dolná 35 — neoficiálny návrh</title>
+<meta name="description" content="Kaviareň Korzo — umelecká kaviareň a galéria na Dolnej 35 v Banskej Bystrici, predtým Kaviareň U Bothára. Neoficiálny návrh webu.">
+<meta name="theme-color" content="#FAFAF7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&amp;family=Syne:wght@400;600;700&amp;display=swap">
+<style>
+:root{
+  --wall:#FAFAF7;--wall-2:#F0EFEA;--plaque:#FFFFFF;
+  --ink:#151513;--ink-2:#57554F;--ink-3:#8A877F;
+  --hair:rgba(21,21,19,.14);--hair-2:rgba(21,21,19,.28);
+  --ultra:#1E36B4;
+  --night:#131312;--on-night:#F3F2EE;--on-night-2:#B4B2AB;--hair-n:rgba(243,242,238,.2);
+  --display:"Syne","Avenir Next","Futura",system-ui,sans-serif;
+  --serif:"Newsreader","Iowan Old Style","Georgia",serif;
+  --W:min(1180px,100% - 64px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--wall);color:var(--ink);font:400 18px/1.6 var(--serif);text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{text-wrap:balance}
+h1,h2,h3,p,dl,dd,ol,ul,figure{margin:0}
+ol,ul{padding:0;list-style:none}
+.in{width:var(--W);margin-inline:auto}
+:focus-visible{outline:2px solid var(--ultra);outline-offset:4px}
+.cap{font:600 11.5px/1.3 var(--display);letter-spacing:.2em;text-transform:uppercase}
+.num{font-variant-numeric:lining-nums tabular-nums}
+.u{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s ease}
+.u:hover{background-size:100% 1px}
+
+/* demo notice */
+.notice{border-bottom:1px solid var(--hair);font:500 13px/1.45 var(--display);color:var(--ink-2);padding:9px 0}
+.notice .in{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.notice b{color:var(--ink);font-weight:700}
+.notice b::before{content:"";display:inline-block;width:7px;height:7px;background:var(--ultra);margin-right:9px;vertical-align:1px}
+
+/* entrance header */
+.entry{border-bottom:1px solid var(--hair)}
+.entry .in{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:78px}
+.mark{display:inline-grid;justify-items:center;line-height:1;padding:6px 0}
+.mark__name{font:600 25px/1 var(--display);letter-spacing:.34em;margin-right:-.34em}
+.mark__sub{display:flex;align-items:center;gap:10px;font:500 11px/1 var(--display);letter-spacing:.16em;margin-top:6px;color:var(--ink-2)}
+.mark__sub::before,.mark__sub::after{content:"";width:22px;height:1px;background:var(--ink)}
+.rooms{display:flex;gap:34px;font:600 13.5px/1 var(--display);letter-spacing:.02em}
+.rooms a{padding:14px 0}
+.entry__tel{font:600 14px/1 var(--display);letter-spacing:.04em;padding:14px 0}
+
+/* hero: the wall */
+.wall{position:relative;padding:64px 0 0}
+.wall__grid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:start}
+.wall__text{grid-column:1/span 6;padding-top:18px}
+.wall__text .cap{color:var(--ink-2)}
+h1{font:700 clamp(42px,6.6vw,84px)/.97 var(--display);letter-spacing:-.03em;margin:22px 0 28px}
+h1 em{font-style:normal;color:var(--ultra);display:block}
+.lede{font-size:20.5px;line-height:1.55;max-width:34ch;color:var(--ink)}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;font:500 17px/1 var(--serif);border:1px solid var(--ink);transition:background-color .2s ease,color .2s ease}
+.btn--ink{background:var(--ink);color:var(--wall)}
+.btn--ink:hover{background:var(--ultra);border-color:var(--ultra)}
+.btn--line:hover{background:var(--ink);color:var(--wall)}
+.hang{margin:0}
+.hang img{box-shadow:0 1px 0 rgba(0,0,0,.05),0 22px 34px -22px rgba(20,20,18,.55)}
+.wall__work{grid-column:7/span 4;padding-top:0}
+.wall__tag{grid-column:11/span 2;align-self:end;margin-bottom:6px}
+.plaque{background:var(--plaque);border:1px solid var(--hair);padding:13px 15px 14px;max-width:210px;font:400 12px/1.45 var(--display);color:var(--ink-2)}
+.plaque b{display:block;font:600 12.5px/1.35 var(--display);color:var(--ink);letter-spacing:.01em}
+.plaque i{display:block;font:italic 400 16px/1.3 var(--serif);color:var(--ink);margin:3px 0 6px}
+.plaque small{display:block;font-size:11px;line-height:1.4;color:var(--ink-3);margin-top:7px;padding-top:7px;border-top:1px solid var(--hair)}
+.floor{height:1px;background:var(--hair-2);margin-top:64px}
+
+/* visitor information */
+.visit{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--hair)}
+.visit>div{padding:22px 24px 24px 0}
+.visit>div+div{padding-left:24px;border-left:1px solid var(--hair)}
+.visit dt{color:var(--ink-3);margin-bottom:8px}
+.visit dd{font-size:18.5px;line-height:1.35}
+.visit dd a{border-bottom:1px solid var(--hair-2);transition:border-color .2s ease}
+.visit dd a:hover{border-color:var(--ink)}
+.visit dd small{display:block;font-size:14.5px;color:var(--ink-2);margin-top:2px}
+
+/* section heads */
+.room{padding:112px 0 0}
+.room__head{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:end;margin-bottom:56px}
+.room__head .cap{grid-column:1/span 12;color:var(--ink-3);margin-bottom:16px}
+h2{font:600 clamp(34px,4.4vw,56px)/1.02 var(--display);letter-spacing:-.025em}
+.room__head h2{grid-column:1/span 6}
+.room__head p{grid-column:8/span 5;font-size:19px;line-height:1.55;color:var(--ink-2)}
+
+/* collection hang */
+.salon{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;row-gap:40px;align-items:start}
+.salon__a{grid-column:1/span 5}
+.salon__b{grid-column:7/span 3;margin-top:72px}
+.salon__txt{grid-column:10/span 3;align-self:end;margin-bottom:112px;font-size:17.5px;line-height:1.6;color:var(--ink)}
+.salon__txt p+p{margin-top:14px}
+.salon__txt q{quotes:"„" "“"}
+.salon .plaque{margin-top:18px}
+
+/* programme */
+.prog{border-top:1px solid var(--ink)}
+.prog li{display:grid;grid-template-columns:3fr 4fr 5fr;column-gap:24px;padding:30px 0 32px;border-bottom:1px solid var(--hair)}
+.prog__date{font:500 17px/1.4 var(--serif);font-variant-numeric:lining-nums tabular-nums}
+.prog__date span{display:block;color:var(--ink-3);font:600 11px/1.3 var(--display);letter-spacing:.2em;text-transform:uppercase;margin-top:6px}
+.prog h3{font:700 clamp(28px,3.4vw,42px)/1 var(--display);letter-spacing:-.02em}
+.prog__kind{display:block;font:600 11.5px/1.3 var(--display);letter-spacing:.2em;text-transform:uppercase;color:var(--ultra);margin-top:12px}
+.prog__desc{font-size:17.5px;line-height:1.55;color:var(--ink-2)}
+.prog__desc b{font-weight:500;color:var(--ink)}
+.prog-note{margin-top:20px;font-size:16px;color:var(--ink-2)}
+.prog-note a{color:var(--ink);border-bottom:1px solid var(--hair-2)}
+
+/* vacancy — the one dark room */
+.vacancy{background:var(--night);color:var(--on-night);margin-top:120px;padding:96px 0 104px}
+.vacancy .in{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:center}
+.vacancy__text{grid-column:1/span 6}
+.vacancy .cap{color:var(--on-night-2)}
+.vacancy h2{font-weight:700;font-size:clamp(38px,5.4vw,68px);line-height:.98;margin:20px 0 26px}
+.vacancy h2 span{display:block;color:var(--on-night-2)}
+.vacancy blockquote{margin:0;font:italic 400 22px/1.45 var(--serif)}
+.vacancy blockquote q{quotes:"„" "“"}
+.vacancy blockquote cite{display:block;font:500 12.5px/1.4 var(--display);font-style:normal;letter-spacing:.04em;color:var(--on-night-2);margin-top:8px}
+.vacancy .acts{margin-top:36px}
+.vacancy .btn{border-color:var(--on-night)}
+.vacancy .btn--ink{background:var(--on-night);color:var(--night)}
+.vacancy .btn--ink:hover{background:var(--wall-2);border-color:var(--wall-2)}
+.vacancy .btn--line{color:var(--on-night)}
+.vacancy .btn--line:hover{background:var(--on-night);color:var(--night)}
+.vacancy__work{grid-column:8/span 5;display:grid;grid-template-columns:minmax(0,1fr);justify-items:start}
+.vacancy__work img{width:100%;max-width:420px;box-shadow:0 26px 40px -26px rgba(0,0,0,.9)}
+.vacancy .plaque{background:transparent;border-color:var(--hair-n);color:var(--on-night-2);margin-top:18px}
+.vacancy .plaque b,.vacancy .plaque i{color:var(--on-night)}
+.vacancy .plaque small{border-color:var(--hair-n);color:var(--on-night-2)}
+
+/* visit room */
+.address{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;row-gap:40px;align-items:start}
+.address__big{grid-column:1/span 6}
+.address__big h2{font:700 clamp(64px,10vw,136px)/.9 var(--display);letter-spacing:-.045em}
+.address__big h2 span{display:block;font:500 clamp(18px,2vw,24px)/1.3 var(--display);letter-spacing:.01em;margin-top:18px;color:var(--ink-2)}
+.address__big .acts{margin-top:34px}
+.address dl{grid-column:8/span 5;border-top:1px solid var(--ink)}
+.address dl>div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--hair)}
+.address dt{color:var(--ink-3);padding-top:4px}
+.address dd{font-size:18px;line-height:1.45}
+.address dd small{display:block;font-size:14.5px;color:var(--ink-2);margin-top:3px}
+.address dd a{border-bottom:1px solid var(--hair-2);transition:border-color .2s ease}
+.address dd a:hover{border-color:var(--ink)}
+
+/* footer */
+.exit{margin-top:120px;border-top:1px solid var(--ink);padding:36px 0 44px;font:400 13px/1.55 var(--display);color:var(--ink-2)}
+.exit .in{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center}
+.exit img{width:76px;height:76px}
+.exit strong{display:block;font:600 14px/1.4 var(--display);color:var(--ink)}
+.exit__demo{text-align:right}
+
+/* mobile bottom bar */
+.dock{display:none}
+
+@media (max-width:1100px){
+  .rooms{gap:22px}
+  .wall__work{grid-column:7/span 6}
+  .wall__tag{grid-column:7/span 6;align-self:start;margin-top:16px}
+  .salon__b{grid-column:7/span 6;margin-top:40px}
+  .salon__txt{grid-column:7/span 6;margin:0}
+}
+@media (max-width:900px){
+  .rooms{display:none}
+  .visit{grid-template-columns:1fr 1fr}
+  .visit>div:nth-child(3){padding-left:0;border-left:0}
+  .visit>div:nth-child(n+3){border-top:1px solid var(--hair)}
+  .room__head h2,.room__head p{grid-column:1/-1}
+  .room__head p{margin-top:18px}
+  .prog li{grid-template-columns:1fr;row-gap:12px}
+  .vacancy__text,.vacancy__work{grid-column:1/-1}
+  .vacancy__work{margin-top:48px}
+  .address__big,.address dl{grid-column:1/-1}
+}
+@media (max-width:760px){
+  :root{--W:calc(100% - 40px)}
+  body{font-size:17px;padding-bottom:calc(68px + env(safe-area-inset-bottom))}
+  .entry .in{min-height:66px}
+  .mark__name{font-size:21px}
+  .wall{padding-top:36px}
+  .wall__grid{display:block}
+  h1{margin:16px 0 20px}
+  .lede{font-size:18.5px}
+  .wall__work{margin:44px 0 0 12%}
+  .wall__tag{margin:14px 0 0 12%}
+  .floor{margin-top:48px}
+  .visit{grid-template-columns:1fr}
+  .visit>div,.visit>div+div{padding:16px 0;border-left:0}
+  .visit>div+div{border-top:1px solid var(--hair)}
+  .room{padding-top:80px}
+  .room__head{margin-bottom:36px}
+  .salon{display:block}
+  .salon__b{margin:48px 0 0 22%}
+  .salon__txt{margin-top:40px}
+  .vacancy{margin-top:88px;padding:64px 0 72px}
+  .vacancy__work img{max-width:100%}
+  .address dl>div{grid-template-columns:1fr;gap:4px}
+  .exit{margin-top:88px}
+  .exit .in{grid-template-columns:auto 1fr}
+  .exit__demo{grid-column:1/-1;text-align:left}
+  .dock{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--wall);border-top:1px solid var(--ink);padding:8px 12px calc(8px + env(safe-area-inset-bottom))}
+  .dock a{display:flex;align-items:center;justify-content:center;min-height:48px;font:500 17px/1 var(--serif);border:1px solid var(--ink)}
+  .dock a:first-child{background:var(--ink);color:var(--wall)}
+}
+@media (max-width:420px){
+  .entry__tel{font-size:13px}
+  .salon__b{margin-left:14%}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="notice"><div class="in"><b>Neoficiálny návrh — nie je to oficiálny web podniku</b><span>ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</span></div></div>
+
+<header class="entry">
+  <div class="in">
+    <a class="mark" href="#top" aria-label="Kaviareň Korzo — na začiatok"><span class="mark__name">KORZO</span><span class="mark__sub">Kaviareň</span></a>
+    <nav class="rooms" aria-label="Hlavná navigácia">
+      <a class="u" href="#zbierka">Zbierka</a>
+      <a class="u" href="#program">Program</a>
+      <a class="u" href="#hladame">Hľadáme</a>
+      <a class="u" href="#navsteva">Návšteva</a>
+    </nav>
+    <a class="entry__tel u num" href="tel:+421908253562">0908 253 562</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wall" aria-labelledby="h1">
+    <div class="in wall__grid">
+      <div class="wall__text">
+        <p class="cap">„Umelecká kaviareň“ · Banská Bystrica</p>
+        <h1 id="h1">Kaviareň a&nbsp;galéria <em>na Dolnej 35</em></h1>
+        <p class="lede">Kaviareň Korzo, na Facebooku predtým Kaviareň U&nbsp;Bothára. Tento rok tu visela výstava obrazov Splnený sen a&nbsp;hrala kapela Grey Fold.</p>
+        <div class="acts">
+          <a class="btn btn--ink" href="tel:+421908253562">Zavolať <span class="num">0908 253 562</span></a>
+          <a class="btn btn--line" href="mailto:kaviarenkorzo@gmail.com">Napísať e-mail</a>
+        </div>
+      </div>
+      <figure class="hang wall__work">
+        <img src="assets/pohare-krystal.webp" width="900" height="1200" fetchpriority="high" alt="Dve ruky v kožených rukaviciach držia brúsené poháre — jeden so svetlým nápojom a plátkom citrusu, druhý s tmavým nápojom a pomarančom">
+      </figure>
+      <p class="plaque wall__tag"><b>Neznámy autor</b><i>Dva poháre v&nbsp;rukaviciach</i>fotografia, nedatovaná<small>Zo stránky Kaviarne Korzo na Facebooku</small></p>
+    </div>
+    <div class="floor"></div>
+    <div class="in">
+      <dl class="visit">
+        <div><dt class="cap">Adresa</dt><dd>Dolná 35<small>Banská Bystrica</small></dd></div>
+        <div><dt class="cap">Telefón</dt><dd><a class="num" href="tel:+421908253562">0908 253 562</a></dd></div>
+        <div><dt class="cap">E-mail</dt><dd><a href="mailto:kaviarenkorzo@gmail.com">kaviarenkorzo@gmail.com</a></dd></div>
+        <div><dt class="cap">Otváracie hodiny</dt><dd>Overte si ich telefonicky<small>alebo na Facebooku kaviarne</small></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="room" id="zbierka" aria-labelledby="h-zbierka">
+    <div class="in">
+      <div class="room__head">
+        <p class="cap">Zbierka</p>
+        <h2 id="h-zbierka">Zo zbierky kaviarne</h2>
+        <p>Fotografie, ktoré Korzo zverejnilo na svojom Facebooku. Pod každou visí popiska ako v&nbsp;galérii — a&nbsp;čo o&nbsp;diele nevieme, to nedopĺňame.</p>
+      </div>
+      <div class="salon">
+        <figure class="hang salon__a">
+          <img src="assets/pohare-sneh.webp" width="840" height="1120" loading="lazy" alt="Pohľad zhora: dve ruky v čiernych rukaviciach držia nad snehom dva poháre s tmavým nápojom, pomarančom a korením">
+          <figcaption class="plaque"><b>Neznámy autor</b><i>Dva poháre nad snehom</i>fotografia, nedatovaná<small>Zo stránky Kaviarne Korzo na Facebooku</small></figcaption>
+        </figure>
+        <figure class="hang salon__b">
+          <img src="assets/novorocne-prianie.webp" width="760" height="950" loading="lazy" alt="Čiernobiela fotografia postavy s pomarančom a pohárom pred tvárou, nápis Veselé Vianoce a šťastný nový rok 2026">
+          <figcaption class="plaque"><b>Kaviareň Korzo</b><i>Veselé Vianoce a šťastný nový rok 2026</i>grafika s fotografiou<small>Novoročné prianie na Facebooku kaviarne</small></figcaption>
+        </figure>
+        <div class="salon__txt">
+          <p>Na Facebooku sa Korzo predstavuje dvoma slovami: <q>Umelecká kaviareň</q>.</p>
+          <p>Výstava Splnený sen visela v&nbsp;kaviarni aj v&nbsp;galérii v&nbsp;Podkroví na tej istej adrese. Pri kaviarni je aj posedenie vonku.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="room" id="program" aria-labelledby="h-program">
+    <div class="in">
+      <div class="room__head">
+        <p class="cap">Program · 2026</p>
+        <h2 id="h-program">Výstavy a koncerty</h2>
+        <p>Dve podujatia z&nbsp;tohto roka, ako ich ohlásila kaviareň a&nbsp;portál BBonline.</p>
+      </div>
+      <ol class="prog">
+        <li>
+          <p class="prog__date">27. 2. 2026 · 18:00<span>Kaviareň Korzo</span></p>
+          <div><h3>Grey Fold</h3><span class="prog__kind">Koncert · pop/rock</span></div>
+          <p class="prog__desc">Kapela v&nbsp;obsadení <b>spev, klávesy, bicie, gitara a&nbsp;basgitara</b>. Plagát koncertu zverejnila kaviareň na Facebooku.</p>
+        </li>
+        <li>
+          <p class="prog__date">3. 3. – 3. 4. 2026<span>Korzo a galéria v Podkroví</span></p>
+          <div><h3>Splnený sen</h3><span class="prog__kind">Výstava obrazov</span></div>
+          <p class="prog__desc">Obrazy dvoch autoriek, <b>vernisáž 5. 3. 2026 o&nbsp;17:00</b>. Výstavu pripravilo Stredoslovenské osvetové stredisko.</p>
+        </li>
+      </ol>
+      <p class="prog-note">Obe podujatia už prebehli. Ďalšie ohlasuje kaviareň na <a class="num" href="https://www.facebook.com/kaviarenubothara/" rel="noopener" target="_blank">Facebooku</a>.</p>
+    </div>
+  </section>
+
+  <section class="vacancy" id="hladame" aria-labelledby="h-hladame">
+    <div class="in">
+      <div class="vacancy__text">
+        <p class="cap">Voľné miesto</p>
+        <h2 id="h-hladame">Hľadáme čašníka <span>/ čašníčku</span></h2>
+        <blockquote><q>Hľadáme práve teba</q><cite>Príspevok kaviarne na Facebooku, 29. 6. 2026</cite></blockquote>
+        <div class="acts">
+          <a class="btn btn--ink" href="tel:+421908253562">Zavolať <span class="num">0908 253 562</span></a>
+          <a class="btn btn--line" href="mailto:kaviarenkorzo@gmail.com?subject=%C4%8Ca%C5%A1n%C3%ADk%20%2F%20%C4%8Da%C5%A1n%C3%AD%C4%8Dka">kaviarenkorzo@gmail.com</a>
+        </div>
+      </div>
+      <figure class="hang vacancy__work">
+        <img src="assets/nabor-plagat.webp" width="820" height="1019" loading="lazy" alt="Náborový plagát kaviarne: Hľadáme čašníka / čašníčku, 0908 253 562, kaviarenkorzo@gmail.com, s líniovou kresbou baristky, ktorá nalieva mlieko do šálky">
+        <figcaption class="plaque"><b>Kaviareň Korzo</b><i>Hľadáme</i>náborový plagát, 2026<small>Titulná fotka Facebooku kaviarne</small></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="room" id="navsteva" aria-labelledby="h-navsteva">
+    <div class="in">
+      <div class="room__head">
+        <p class="cap">Návšteva</p>
+      </div>
+      <div class="address">
+        <div class="address__big">
+          <h2 id="h-navsteva">Dolná 35<span>Banská Bystrica</span></h2>
+          <div class="acts">
+            <a class="btn btn--ink" href="https://www.google.com/maps/search/?api=1&amp;query=Kaviare%C5%88%20Korzo%2C%20Doln%C3%A1%2035%2C%20Bansk%C3%A1%20Bystrica" rel="noopener" target="_blank">Otvoriť v Mapách Google</a>
+          </div>
+        </div>
+        <dl>
+          <div><dt class="cap">Telefón</dt><dd><a class="num" href="tel:+421908253562">0908 253 562</a></dd></div>
+          <div><dt class="cap">E-mail</dt><dd><a href="mailto:kaviarenkorzo@gmail.com">kaviarenkorzo@gmail.com</a></dd></div>
+          <div><dt class="cap">Hodiny</dt><dd>Aktuálne otváracie hodiny si overte telefonicky.<small>Sviatočné hodiny kaviareň zverejňuje na Facebooku.</small></dd></div>
+          <div><dt class="cap">Vonku</dt><dd>Posedenie vonku</dd></div>
+          <div><dt class="cap">Sledujte</dt><dd><a href="https://www.facebook.com/kaviarenubothara/" rel="noopener" target="_blank">Facebook</a> · <a href="https://www.instagram.com/korzo_kaviaren_bb/" rel="noopener" target="_blank">Instagram</a></dd></div>
+          <div><dt class="cap">Predtým</dt><dd>Kaviareň U Bothára</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="exit">
+  <div class="in">
+    <img src="assets/logo.webp" width="401" height="400" loading="lazy" alt="Logo Kaviareň Korzo">
+    <p><strong>Kaviareň Korzo</strong>Umelecká kaviareň · Dolná 35, Banská Bystrica</p>
+    <p class="exit__demo">Neoficiálny návrh webu · webdavid.sk · 2026<br>Nie je to oficiálny web podniku.</p>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="Rýchle akcie">
+  <a href="tel:+421908253562">Zavolať</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=Kaviare%C5%88%20Korzo%2C%20Doln%C3%A1%2035%2C%20Bansk%C3%A1%20Bystrica" rel="noopener" target="_blank">Mapa</a>
+</nav>
